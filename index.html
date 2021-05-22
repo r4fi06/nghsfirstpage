@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header-area">
+        <nav>
+            <a href="index.html"><img src="images/logo2 - Copy.png" alt="logo"></a>
+            <div class="nav-link" id="navLink">
+                <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Academic</a></li>
+                    <li><a href="#">Clubs</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+        </nav>
+        <div class="texr-area">
+            <h1>The Traditional School of Old Dhaka</h1>
+            <p>narinda government high school has passed its 58 years of journey in the leadership of <br> competent teachers with many success stories.</p>
+            <a href="#" class="btn"> Visit us to know more</a>
+        </div>
+    </section>
+    <section class="Academic">
+
+    </section>
+
+
+    <!-- JavaScript -->
+    <script>
+        var navLink= document.getElementById("navLink")
+        function showMenu() {
+            navLink.style.right ="0";
+        }
+        function hideMenu() {
+            navLink.style.right ="-200px";
+        }
+    </script>
+</body>
+</html>
